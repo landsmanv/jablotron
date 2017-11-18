@@ -37,10 +37,10 @@ based64 acessToken required in header (jablotron amFibG90cm9uOnRyb24= or batman 
 # POST monitoredEndpoint #
 #Import one Url for user batman, name, monitoredInterval, Url have to be specified in data part
 
-curl --request POST \
-     --url 'http://localhost:4567/monitoredEndpoint' \
-     --header 'authorization: Basic YmF0bWFuOnJvYmlu' \
-     --header 'content-type: application/json' \
+curl --request POST \\
+     --url 'http://localhost:4567/monitoredEndpoint' \\
+     --header 'authorization: Basic YmF0bWFuOnJvYmlu' \\
+     --header 'content-type: application/json' \\
      --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/one","Name":"one","monitoredInterval":"60"}'
 
 #Import one Url for user jablotron, Name, monitoredInterval, Url have to be specified in data part
