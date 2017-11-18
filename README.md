@@ -1,4 +1,4 @@
-#How to deploy app:#
+# How to deploy app:
 
 Requirements: 
 GNU/linux, tested on arch/4.9.60-1, 
@@ -30,15 +30,16 @@ Use rest client or following samples in /curl folder
 based64 acessToken required in header (amFibG90cm9uOnRyb24= or YmF0bWFuOnJvYmlu)
 
 # POST monitoredEndpoint #
+#Import one Url for user batman, name, monitoredInterval, Url have to be specified in data part
 
-# Import one Url for user batman, name, monitoredInterval, Url have to be specified in data part
 curl --request POST \
      --url 'http://localhost:4567/monitoredEndpoint' \
      --header 'authorization: Basic YmF0bWFuOnJvYmlu' \
      --header 'content-type: application/json' \
      --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/one","Name":"one","monitoredInterval":"60"}'
 
-# Import one Url for user jablotron, Name, monitoredInterval, Url have to be specified in data part
+#Import one Url for user jablotron, Name, monitoredInterval, Url have to be specified in data part
+
 curl --request POST \
      --url 'http://localhost:4567/monitoredEndpoint' \
      --header 'authorization: Basic amFibG90cm9uOnRyb24=' \
@@ -46,16 +47,15 @@ curl --request POST \
      --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/two","Name":"two","monitoredInterval":"120"}'
 
 # GET monitoredEndpoint #
+#Get all records for auth user YmF0bWFuOnJvYmlu
 
-# Get all records for auth user
 curl --request GET \
      --url 'http://localhost:4567/monitoredEndpoint/' \
      --header 'authorization: Basic YmF0bWFuOnJvYmlu' \
      --header 'content-type: application/json'
 
 # DEL monitoredEndpoint #
-
-# Delete record, Id of record is required, can be acquired with GET
+#Delete record, Id of record is required, can be acquired with GET
 
 curl --request DELETE \
      --url 'http://localhost:4567/monitoredEndpoint/1' \
@@ -64,7 +64,7 @@ curl --request DELETE \
 
 # PUT monitoredEndpoint #
 
-# Update record, Id, Name, monitoredInterval and Url have to be specified in data part
+#Update record, Id, Name, monitoredInterval and Url have to be specified in data part
 
 curl --request PUT \
      --url 'http://localhost:4567/monitoredEndpoint' \
@@ -74,7 +74,7 @@ curl --request PUT \
 
 # GET monitoringResult #
 
-# Get last 10 records for Url, Id of Url is required, can be acquired with monitoredEndpoint GET
+#Get last 10 records for Url, Id of Url is required, can be acquired with monitoredEndpoint GET
 
 curl --request GET \
      --url 'http://localhost:4567/monitoringResult/1' \
