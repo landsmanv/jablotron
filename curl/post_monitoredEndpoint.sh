@@ -2,13 +2,13 @@ curl --request POST \
      --url 'http://localhost:4567/monitoredEndpoint' \
      --header 'authorization: Basic YmF0bWFuOnJvYmlu' \
      --header 'content-type: application/json' \
-     --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/one","Name":"one","monitoredInterval":"60"}'
+     --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/one","Name":"one","monitoredInterval":"15"}'
 
 curl --request POST \
      --url 'http://localhost:4567/monitoredEndpoint' \
      --header 'authorization: Basic amFibG90cm9uOnRyb24=' \
      --header 'content-type: application/json' \
-     --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/two","Name":"two","monitoredInterval":"120"}'
+     --data '{"Url":"https://raw.githubusercontent.com/landsmanv/jablotron/master/two","Name":"two","monitoredInterval":"30"}'
 
 curl --request POST \
      --url 'http://localhost:4567/monitoredEndpoint' \

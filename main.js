@@ -17,12 +17,14 @@ config.db.importSql.then( () => {
   // after sql promise, start loading monitoring tasks
   startMonitoring()
 })
+
 // configure server
 const server = restify.createServer({
   name: config.name,
   version: config.version,
   handleUncaughtExceptions: true
 });
+
 // load some server plugins
 server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
@@ -99,6 +101,7 @@ server.put('/monitoredEndpoint', function (req, res, next) {
     res.end(JSON.stringify(results));
   });
 });
+
 // rest api to delete one monitoredEndpoint with given Id
 server.del('/monitoredEndpoint/:Id', function (req, res) {
   con.query('delete from `MonitoredEndpoint` where `Id`=? and `User`=?', [req.params.Id, req.username], function (error, results, fields) {
