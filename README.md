@@ -6,7 +6,7 @@ Requirements:
 * docker-compose, tested on 1.17.0
 * curl, tested with curl 7.56.1
 
-instructions:
+Instructions:
 1) git clone https://github.com/landsmanv/jablotron
 2) cd jablotron
 3) docker-compose up -d
