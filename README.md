@@ -24,7 +24,7 @@ Main aplication is listening on localhost:4567 with two endpoints
 * monitoredEndpoint (CRUD)
 * monitoringResult (R)
 
-Aplication creates from (empty) tables.sql and inserts two users with credentials coded by base64
+Aplication creates empty tables.sql and inserts two users with credentials coded by base64
 
 Aplication starts monitoring Urls if any (we need import some for first run).
 
