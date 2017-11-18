@@ -1,0 +1,21 @@
+{
+  "name": "jablotron",
+  "version": "1.0.0",
+  "description": "jablotron",
+  "repository": "jablotron",
+  "main": "main.js",
+  "scripts": {
+    "test": "null"
+  },
+  "keywords": [],
+  "author": "Vlastimil Landsman",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.15.0",
+    "restify": "^6.3.2",
+    "request": "^2.81.0",
+    "node-mysql-importer": "^0.0.10",
+    "valid-url": "^1.0.9",
+    "restify-errors": "^5.0.0"
+  }
+}

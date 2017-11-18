@@ -1,0 +1,31 @@
+version: '3.1'
+services:
+  db:
+    image: mariadb
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: jablotron
+    ports:
+      - 3306:3306
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - /etc/localtime:/etc/localtime:ro
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  jablotron:
+    container_name: jablotron
+    build: .
+    image: jablotron:1.0.0
+    restart: always
+    ports:
+      - 4567:4567
+    depends_on:
+      - "db"
+volumes:
+  mariadb_data:
