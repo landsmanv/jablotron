@@ -32,7 +32,7 @@ Use some rest client or edit/use following samples in curl folder
 
 based64 acessToken required in header (jablotron amFibG90cm9uOnRyb24= or batman YmF0bWFuOnJvYmlu)
 
-'content-type: application/json' and other have to be specified in header too
+'content-type: application/json' and other have to be specified
 
 # POST monitoredEndpoint #
 #Import one Url for user batman, name, monitoredInterval, Url have to be specified in data part
