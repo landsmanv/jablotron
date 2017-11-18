@@ -3,7 +3,7 @@
 Requirements: 
 * GNU/linux, tested on arch/4.9.60-1
 * docker, tested version 17.10.0-ce
-* docker-compose, tested versiin 1.17.0
+* docker-compose, tested version 1.17.0
 * curl, tested version 7.56.1
 
 Instructions:
