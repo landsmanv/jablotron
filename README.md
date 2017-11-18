@@ -1,4 +1,4 @@
-#How to deploy app:
+#How to deploy app:#
 
 Requirements: 
 GNU/linux, tested on arch/4.9.60-1, 
@@ -17,7 +17,7 @@ It starts 3 containers:
 
 Default credentials for db jablotron is root:password
 
-About
+#About#
 Aplication is listening on localhost:4567 with two endpoints
 * monitoredEndpoint (CRUD)
 * monitoringResult (R)
