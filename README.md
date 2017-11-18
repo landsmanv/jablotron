@@ -24,12 +24,12 @@ Main aplication is listening on localhost:4567 with two endpoints
 * monitoredEndpoint (CRUD)
 * monitoringResult (R)
 
-Aplication imports tables.sql with empty tables and inserts two users with credentials coded by base64
-Aplication starts monitoring Urls if any (we need import some).
+Aplication creats from (empty) tables.sql and inserts two users with credentials coded by base64
+Aplication starts monitoring Urls if any (we need import some for first run).
 
 Use some rest client or edit/use following samples in curl folder
 based64 acessToken required in header (jablotron amFibG90cm9uOnRyb24= or batman YmF0bWFuOnJvYmlu)
-'content-type: application/json' have to be specified in header too
+'content-type: application/json' and other have to be specified in header too
 
 # POST monitoredEndpoint #
 #Import one Url for user batman, name, monitoredInterval, Url have to be specified in data part
