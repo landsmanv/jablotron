@@ -14,11 +14,12 @@ Instructions:
 It starts 3 containers:
 * Main node aplication which is build from included Dockerfile
 * Mysql database Mariadb on localhost:3306
-* Adminer, database management tool (enabled but optionally) on localhost:8080
+* Adminer, database management tool (enabled but optionally) on http://localhost:8080
 
 Default credentials for db jablotron is root:password
+http://localhost:8080/?server=db&username=root&password=password&db=jablotron
 
-# About
+# About App
 Main aplication is listening on localhost:4567 with two endpoints
 * monitoredEndpoint (CRUD)
 * monitoringResult (R)
@@ -26,9 +27,9 @@ Main aplication is listening on localhost:4567 with two endpoints
 Aplication imports tables.sql with empty tables and inserts two users with credentials coded by base64
 Aplication starts monitoring Urls if any (we need import some).
 
-
-Use some rest client or edit following samples in /curl folder
+Use some rest client or edit/use following samples in curl folder
 based64 acessToken required in header (jablotron amFibG90cm9uOnRyb24= or batman YmF0bWFuOnJvYmlu)
+'content-type: application/json' have to be specified in header too
 
 # POST monitoredEndpoint #
 #Import one Url for user batman, name, monitoredInterval, Url have to be specified in data part
