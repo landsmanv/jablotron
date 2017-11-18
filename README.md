@@ -1,4 +1,4 @@
-How to deploy app:
+#How to deploy app:
 
 Requirements: 
 GNU/linux, tested on arch/4.9.60-1, 
